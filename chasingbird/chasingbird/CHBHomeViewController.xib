@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHBHomeViewController">
+            <connections>
+                <outlet property="multiPlayerView" destination="x8W-R3-aNG" id="fex-A6-g3j"/>
+                <outlet property="sensorTagButton" destination="Hp2-xW-iZj" id="rki-gm-hPZ"/>
+                <outlet property="singlePlayerView" destination="J0K-Po-2AR" id="dX2-tr-cTS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-menu_background" translatesAutoresizingMaskIntoConstraints="NO" id="RWj-i3-gK2">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-menu_btn_single" translatesAutoresizingMaskIntoConstraints="NO" id="J0K-Po-2AR">
+                    <rect key="frame" x="201" y="279" width="199" height="42"/>
+                </imageView>
+                <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-menu_btn_multi" translatesAutoresizingMaskIntoConstraints="NO" id="x8W-R3-aNG">
+                    <rect key="frame" x="201" y="337" width="199" height="42"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-menu_title" translatesAutoresizingMaskIntoConstraints="NO" id="3m4-kn-7tN">
+                    <rect key="frame" x="191" y="-3" width="218" height="250"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp2-xW-iZj">
+                    <rect key="frame" x="212" y="337" width="177" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Connect SensorTag" backgroundImage="button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didSelectSensorTag:" destination="-1" eventType="touchUpInside" id="A7R-tp-fSZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="J0K-Po-2AR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0Hv-e5-FMU"/>
+                <constraint firstItem="RWj-i3-gK2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Cq-lL-Qt9"/>
+                <constraint firstItem="RWj-i3-gK2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="39q-7f-6hM"/>
+                <constraint firstItem="3m4-kn-7tN" firstAttribute="centerX" secondItem="RWj-i3-gK2" secondAttribute="centerX" id="8ms-t0-A6x"/>
+                <constraint firstItem="J0K-Po-2AR" firstAttribute="centerX" secondItem="RWj-i3-gK2" secondAttribute="centerX" id="KAD-Vo-Ce0"/>
+                <constraint firstItem="x8W-R3-aNG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MCl-7e-3t5"/>
+                <constraint firstItem="Hp2-xW-iZj" firstAttribute="centerX" secondItem="x8W-R3-aNG" secondAttribute="centerX" id="XAm-gP-Wi5"/>
+                <constraint firstItem="J0K-Po-2AR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yar-kX-CQb"/>
+                <constraint firstItem="x8W-R3-aNG" firstAttribute="centerX" secondItem="RWj-i3-gK2" secondAttribute="centerX" id="b8Y-qm-19I"/>
+                <constraint firstItem="x8W-R3-aNG" firstAttribute="top" secondItem="J0K-Po-2AR" secondAttribute="bottom" constant="16" id="g0Q-iL-ciH"/>
+                <constraint firstAttribute="bottom" secondItem="RWj-i3-gK2" secondAttribute="bottom" id="gcy-Qc-uXD"/>
+                <constraint firstAttribute="trailing" secondItem="RWj-i3-gK2" secondAttribute="trailing" id="hOa-1j-SkS"/>
+                <constraint firstItem="J0K-Po-2AR" firstAttribute="top" secondItem="3m4-kn-7tN" secondAttribute="bottom" constant="32" id="pBU-6e-br4"/>
+                <constraint firstItem="3m4-kn-7tN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wYi-3F-rJC"/>
+                <constraint firstItem="Hp2-xW-iZj" firstAttribute="centerY" secondItem="x8W-R3-aNG" secondAttribute="centerY" id="yic-Zq-ngz"/>
+                <constraint firstItem="J0K-Po-2AR" firstAttribute="centerX" secondItem="3m4-kn-7tN" secondAttribute="centerX" id="yue-sk-Ofb"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8ms-t0-A6x"/>
+                    <exclude reference="KAD-Vo-Ce0"/>
+                    <exclude reference="yue-sk-Ofb"/>
+                    <exclude reference="b8Y-qm-19I"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="button" width="177" height="42"/>
+        <image name="main-menu_background" width="414" height="736"/>
+        <image name="main-menu_btn_multi" width="199" height="42"/>
+        <image name="main-menu_btn_single" width="199" height="42"/>
+        <image name="main-menu_title" width="218" height="250"/>
+    </resources>
+</document>
